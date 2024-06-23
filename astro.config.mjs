@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 
 export default defineConfig({
   site: 'https://ramixter.github.io/test-astro-docs/',
-//   base: '/test-astro-docs/',
+  base: '/test-astro-docs/',
   integrations: [
     starlight({
       title: 'My Docs',
