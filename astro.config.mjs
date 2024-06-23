@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-  site: 'https://ramixter.github.io/test-astro-docs/',
+  site: 'https://ramixter.github.io',
   base: '/test-astro-docs/',
   integrations: [
     starlight({
