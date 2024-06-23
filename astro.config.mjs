@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import markdown from '@astrojs/markdown-remark';
 
 export default defineConfig({
   site: 'https://ramixter.github.io',
@@ -23,5 +24,16 @@ export default defineConfig({
         },
       ],
     }),
+    markdown(),
   ],
+  markdown: {
+    remarkPlugins: [
+      require('remark-base-url'),
+      {
+        options: {
+          baseUrl: '/test-astro-docs/',
+        },
+      },
+    ],
+  },
 });
